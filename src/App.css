@@ -1,0 +1,156 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-container.full-screen-layout {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #0F2741;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(15, 39, 65, 0.08);
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  color: #2C3E50;
+}
+
+.section {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(15, 39, 65, 0.08);
+  border-top: 4px solid #20B2AA;
+}
+
+.section.full-screen {
+  border-radius: 0;
+  margin: 0;
+  padding: 60px 40px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: none;
+  background-color: #F5F7FA;
+}
+
+.section h2 {
+  color: #0F2741;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.section p {
+  color: #5A6C7D;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.demo-box {
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.demo-box.warning {
+  background-color: #F0F8F8;
+  border-left-color: #20B2AA;
+}
+
+.demo-box.success {
+  background-color: #F0F8F8;
+  border-left-color: #20B2AA;
+}
+
+.app-footer {
+  text-align: center;
+  color: #0F2741;
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+.like-button {
+  background-color: #20B2AA;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(32, 178, 170, 0.3);
+}
+
+.like-button:hover {
+  background-color: #1A8A7F;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(32, 178, 170, 0.4);
+}
+
+.like-button.broken {
+  background-color: #5A9AA3;
+  color: white;
+  box-shadow: 0 4px 15px rgba(90, 154, 163, 0.3);
+}
+
+.like-button.broken:hover {
+  background-color: #4A8A93;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(90, 154, 163, 0.4);
+}
+
+.restaurant-card {
+  border: none;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #F8FBFC;
+  min-width: 250px;
+  box-shadow: 0 4px 15px rgba(15, 39, 65, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-left: 4px solid #20B2AA;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(15, 39, 65, 0.12);
+}
+
+.restaurant-card h2 {
+  color: #0F2741;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.restaurant-card p {
+  color: #5A6C7D;
+  font-size: 1rem;
+}

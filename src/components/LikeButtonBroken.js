@@ -7,7 +7,7 @@ function LikeButtonBroken() {
   }
 
   return (
-    <button onClick={handleClick}>
+    <button className="like-button broken" onClick={handleClick}>
       Likes: {count}
     </button>
   );

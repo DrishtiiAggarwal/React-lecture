@@ -1,0 +1,82 @@
+/* Counter Component Styles */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.counter-display {
+  text-align: center;
+}
+
+.counter-display p {
+  color: #0F2741;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.counter-value {
+  font-size: 4rem;
+  color: #20B2AA;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(32, 178, 170, 0.1);
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-success {
+  background-color: #20B2AA;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #1A8A7F;
+}
+
+.btn-danger {
+  background-color: #5A9AA3;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #4A8A93;
+}
+
+.btn-warning {
+  background-color: #E8EEF5;
+  color: #0F2741;
+  border: 2px solid #20B2AA;
+}
+
+.btn-warning:hover {
+  background-color: #D8E4F0;
+}

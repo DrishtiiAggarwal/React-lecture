@@ -1,37 +1,30 @@
-import RestaurantCard from './components/RestaurantCard';
-import LikeButtonBroken from './components/LikeButtonBroken';
-import LikeButton from './components/LikeButton';
-import UserContext from './context/UserContext';
-import RestaurantList from './components/RestaurantList';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
+import Page4 from './pages/Page4';
+import Page5 from './pages/Page5';
 
 function App() {
   return (
-    <div style={{ padding: '24px', fontFamily: 'sans-serif' }}>
-
-      <h1>React Lecture Demo</h1>
-
-      {/* 1. Components + Props */}
-      <h2>1. Components and Props</h2>
-      <RestaurantCard name="KFC" rating={4.2} />
-      <RestaurantCard name="McDonald's" rating={4.5} />
-
-      {/* 2. Broken Like Button */}
-      <h2>2. Normal Variable (Broken)</h2>
-      <p>Click the button — open Console (F12) to see it changing, but the screen won't update.</p>
-      <LikeButtonBroken />
-
-      {/* 3. useState Like Button */}
-      <h2>3. useState (Fixed)</h2>
-      <p>Now the screen updates instantly on every click.</p>
-      <LikeButton />
-
-      {/* 4. Context */}
-      <h2>4. Context — No Prop Drilling</h2>
-      <UserContext.Provider value={{ name: 'Rahul' }}>
-        <RestaurantList />
-      </UserContext.Provider>
-
-    </div>
+    <Router>
+      <Navigation />
+      <div className="app-container full-screen-layout">
+        <Routes>
+          <Route path="/page1" element={<Page1 />} />
+          <Route path="/page2" element={<Page2 />} />
+          <Route path="/page3" element={<Page3 />} />
+          <Route path="/page4" element={<Page4 />} />
+          <Route path="/page5" element={<Page5 />} />
+          <Route path="/" element={<Navigate to="/page1" replace />} />
+        </Routes>
+        <footer className="app-footer">
+          <p>Happy learning! 🚀</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
