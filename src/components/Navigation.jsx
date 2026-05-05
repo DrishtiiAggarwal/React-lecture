@@ -6,10 +6,12 @@ export default function Navigation() {
   
   const pages = [
     { path: '/page1', label: '1. Props' },
-    { path: '/page2', label: '2. Broken Variable' },
+    { path: '/page2', label: '2. Normal Variable' },
     { path: '/page3', label: '3. useState' },
     { path: '/page4', label: '4. Context' },
-    { path: '/page5', label: '5. useReducer' }
+    { path: '/page5', label: '5. useReducer' },
+    { path: '/page6', label: '6. Redux' },
+    { path: '/page7', label: '7. Zustand' }
   ];
 
   return (
